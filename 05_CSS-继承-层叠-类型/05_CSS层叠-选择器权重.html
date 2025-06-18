@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      color: green !important;
+      /* !important 优先级最高 10000*/
+    }
+    #main{
+      color: red;
+    }
+    /* id选择器优先级 100 */
+
+    .box{
+      color: blue;
+    }
+    /* 类选择器优先级 10 */
+    div{
+      color: pink;
+    }
+    /* 元素选择器优先级 1 */  
+
+    *{
+      color: orange;
+    }
+    /* 通用选择器优先级 0 */
+    /* 0不代表没有权重,只是表示很低 */
+  </style>
+</head>
+<body>
+  <div id="main" class="box">
+    <p>你可曾知道你自己就是肥沃的土地，可以长出为你所用的一切。 ---卡尔·荣格-</p>
+  </div>
+</body>
+</html>
