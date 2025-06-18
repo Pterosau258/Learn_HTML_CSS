@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 不会影响子元素 */
+    .box1 {
+      color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    /* 会影响子元素 */
+    .box2 {
+      opacity: .5;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box1">这是box1</div>
+  <div class="box2">
+    这是box2
+    <p>我还有改变的可能性。一想起这一点，我就心潮澎湃。 ---北野武-</p>
+  </div>
+</body>
+
+</html>

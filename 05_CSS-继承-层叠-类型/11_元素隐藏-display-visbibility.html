@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    .box{
+    .box {
       width: 100px;
       height: 100px;
       background-color: red;
     }
-    .box div{
+
+    .box div {
       display: none;
     }
-    .box:hover div{
+
+    .box:hover div {
       position: absolute;
       top: 100px;
       left: 100px;
@@ -22,13 +25,24 @@
       background-color: blue;
       display: block;
     }
+
+    .item {
+      visibility: collapse;
+    }
   </style>
 </head>
+
 <body>
+  <!-- 元素隐藏后不占据空间 -->
   <div class="box">
     <p>你可曾知道你自己就是肥沃的土地，可以长出为你所用的一切-</p>
     <div>这是一个div元素</div>
   </div>
   <div>asdfsd</div>
+  <!-- 元素隐藏后依然占据空间 -->
+  <div>hhh</div>
+  <div class="item">aaa</div>
+  <div>bbb</div>
 </body>
+
 </html>

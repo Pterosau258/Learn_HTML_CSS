@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      padding-left: 10px;
+      /* 如果使用padding-left属性，那么box的宽度就会变成210px */
+      /* 所以需要设置box-sizing属性为border-box，来避免这种情况 */
+      box-sizing: border-box;
+    }
+
+    .item {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+    }
+
+
+    .box2 {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      /* 虽然使用margin不会改变盒子的宽度，但是设置margin-top的时候会将值传给父元素，导致box2距离上方10px，而不是item2距离父元素上方10px */
+      /* 为了避免这总情况需要设置overflow属性为auto */
+      overflow: auto;
+      border: 1px solid black;
+    }
+
+    .item2 {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+
+    /* 
+    可以看到无论是margin还是padding调整元素位置的时候都会有缺陷
+    那么问题来了，我们该如何选择？
+    margin更适合调整兄弟元素之间距距离
+    padding更适合调整元素自身内容之间的距离
+     */
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="item">
+    </div>
+  </div>
+  <div class="box2">
+    <div class="item2">
+    </div>
+  </div>
+</body>
+
+</html>
