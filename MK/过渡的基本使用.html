@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      transition: width 3s linear .5s;
+    }
+
+    .box:hover {
+      width: 200px;
+    }
+
+    .box2 {
+      margin-bottom: 30px;
+    }
+
+    .box2 p {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      left: 0px;
+      background-color: skyblue;
+      transition: all 0.5s linear 0s;
+    }
+
+    .box2 p:hover {
+      left: 1000px;
+    }
+
+    .box3 {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      transition: background-color 0.5s linear 0s;
+    }
+
+    .box3:hover {
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box"></div>
+  <div class="box2">
+    <p></p>
+  </div>
+  <div class="box3"></div>
+
+</body>
+
+</html>
