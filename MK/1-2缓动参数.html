@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box div {
+      position: relative;
+      left: 0px;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      transition: all 0.5s ease-in-out 0s;
+      margin-bottom: 30px;
+    }
+
+    .item:nth-child(1) {
+      transition-timing-function: ease;
+    }
+
+    .item:nth-child(2) {
+      transition-timing-function: linear;
+    }
+
+    .item:nth-child(3) {
+      transition-timing-function: ease-in;
+    }
+
+    .item:nth-child(4) {
+      transition-timing-function: ease-out;
+    }
+
+    .item:nth-child(5) {
+      transition-timing-function: ease-in-out;
+    }
+
+    .box:hover .item {
+      left: 1000px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: skyblue;
+      animation: rotating 2s linear 0s infinite alternate;
+    }
+
+    @keyframes rotating {
+      form {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .box2 {
+      width: 100px;
+      height: 100px;
+      margin-top: 30px;
+      background-color: rgb(16, 72, 95);
+      animation: move 2s linear 0s infinite alternate;
+      /* alternate让动画反向播放 */
+    }
+
+    @keyframes move {
+      from {
+        transform: translateX(0px);
+      }
+
+      to {
+        transform: translateX(1000px);
+      }
+    }
+
+    .box3 {
+      width: 100px;
+      height: 100px;
+      margin-top: 30px;
+      background-color: rgb(29, 34, 36);
+      animation: circle 2s linear 0s forwards;
+      /* forwards让动画停留在最后一帧 */
+    }
+
+    @keyframes circle {
+      from {
+        border-radius: 0;
+      }
+
+      to {
+        border-radius: 50%;
+      }
+    }
+
+    .box4 {
+      width: 100px;
+      height: 100px;
+      margin-top: 30px;
+      background-color: rgb(85, 171, 90);
+      animation: color 2s linear 0s forwards;
+    }
+
+    @keyframes color{
+      10%{
+        background-color: red;
+      }
+      20%{
+        background-color: yellow;
+      }
+      30%{
+        background-color: blue;
+      }
+      40%{
+        background-color: pink;
+      }
+      50%{
+        background-color: orange;
+      }
+      60%{
+        background-color: green;
+      }
+      70%{
+        background-color: black;
+      }
+      80%{
+        background-color: brown;
+      }
+      90%{
+        background-color: gray;
+      }
+      100%{
+        background-color: skyblue;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+  <div class="box4"></div>
+</body>
+
+</html>
